@@ -31,14 +31,14 @@ body,html {
 
 }
 
-.image_key{
+.image{
   height: 100%;
   opacity: 0;
   transition:all 3.5s ease;
   position:absolute;
 }
 
-.image_key img{
+.image img{
 height:100%;
 }
 

@@ -11,7 +11,7 @@ window.addEventListener("keydown", function(e){
     e.keycode //récupère la clef de la touche
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const button = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-    const img = document.querySelector(`.image_key[data-key="${e.keyCode}"]`);
+    const img = document.querySelector(`.image[data-key="${e.keyCode}"]`);
     if(!audio) return;
 
     audio.currentTime = 0;
@@ -32,7 +32,7 @@ function removeTransition(e){
 };
 
 
-const imgs = document.querySelectorAll(".image_key");
+const imgs = document.querySelectorAll(".image");
 
 imgs.forEach((img) => img.addEventListener("transitionend", removeTransitionImg));
 
